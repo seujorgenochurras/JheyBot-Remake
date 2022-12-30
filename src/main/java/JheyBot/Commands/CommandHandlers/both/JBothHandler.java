@@ -9,13 +9,12 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
-
-
 public class JBothHandler extends ListenerAdapter {
 
 
    //Time that bot can stay on channel without any music on
    //TODO make time changeable on runtime
+   
    public static BotDisconnectedTime afkTime = new BotDisconnectedTime(300);
    private final String prefix = Bot.prefix;
    public static HashSet<IBothICommand> commands = new HashSet<>();
